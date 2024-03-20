@@ -41,17 +41,17 @@
        <button onclick="addName()">Add Name</button>
         <script>
             function addName(){
-				name = prompt("Please write your name: First, middle, last");
-				split_name = name.split(",");
-				first_name = split_name[0];
-				middle_name = split_name[1];
-				last_name = split_name[2];
+				var name = prompt("Please write your name: First, middle, last");
+				var split_name = name.split(",");
+				var first_name = split_name[0];
+				var middle_name = split_name[1];
+				var last_name = split_name[2];
 				
-				table = document.getElementById("table");
-				row = table.insertRow(-1);
-				fn = row.insertCell(0);
-				mn = row.insertCell(1);
-				ln = row.insertCell(2);
+				const table = document.getElementById("table");
+				const row = table.insertRow(-1);
+				const fn = row.insertCell(0);
+				const mn = row.insertCell(1);
+				const ln = row.insertCell(2);
 				fn.innerHTML = first_name;
 				mn.innerHTML = middle_name;
 				ln.innerHTML = last_name;
